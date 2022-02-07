@@ -6,6 +6,17 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "lint-staged": {
+    "*.js": [
+      "standard --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/davidvrsantos/clean-node-api.git"
@@ -17,6 +28,10 @@
   },
   "homepage": "https://github.com/davidvrsantos/clean-node-api#readme",
   "devDependencies": {
+    "lint-staged": "^12.3.3",
     "standard": "^16.0.4"
+  },
+  "dependencies": {
+    "husky": "^4.3.8"
   }
 }
