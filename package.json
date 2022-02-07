@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "lint-staged": {
     "*.js": [
@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/davidvrsantos/clean-node-api#readme",
   "devDependencies": {
+    "jest": "^27.5.0",
     "lint-staged": "^12.3.3",
     "standard": "^16.0.4"
   },
