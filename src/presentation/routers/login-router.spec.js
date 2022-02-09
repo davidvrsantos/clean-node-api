@@ -96,7 +96,7 @@ describe('Login Router', () => {
     expect(httpResponse.statusCode).toBe(200)
   })
 
-  test('Should return 200 when valid credentials are provided', () => {
+  test('Should return valid token when valid credentials are provided', () => {
     const { sut, authUseCaseSpy } = makeSut()
     const httpRequest = {
       body: {
